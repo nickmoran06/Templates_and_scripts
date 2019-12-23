@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# installation of pep8
+
+sudo apt-get -y upgrade
+sudo apt-get -y update
+
+sudo apt-get -y install python3-pep8
+sudo apt-get -y install python3-pip
+sudo pip3 install --upgrade pep8
+sudo pip3 install pep8

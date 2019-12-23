@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# Install the first programs to use a context
+
+# Pre-requirements to install things
+sudo apt-get -y upgrade
+sudo apt-get -y update
+
+# My favorite text editor
+sudo apt-get -y install emacs
+
+# Configuration of a .gitignore file
+echo "*~
+*#" >> .gitignore
+
+# Git configuration
+sudo apt-get -y install git
+git config --global user.name "nickmoran06"
+git config --global user.email nicolasmoranpulido@gmail.com
+git config --global core.editor emacs
+
+# Different plugins for terminal customization
+sudo apt-get -y install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# Main applications to use C language
+
+# Pre-requirements to install things
+sudo apt-get -y upgrade
+sudo apt-get -y update
+
+# gcc compiler and gdb
+sudo apt-get -y install gcc
+sudo apt-get -y install gdb
+sudo apt-get -y install valgrind
