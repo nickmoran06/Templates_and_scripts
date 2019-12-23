@@ -1,0 +1,10 @@
+# for problems with the access
+
+sudo vim /etc/resolv.conf
+nameserver 8.8.8.8 nameserver 8.8.4.4
+
+set HTTPS_PROXY=http://<login_internet>:<password_internet>@aproxy:aport
+set HTTP_PROXY=http://<login_internet>:<password_internet>@aproxy:aport
+
+git config --global --unset http.proxy
+git config --global --unset https.proxy
